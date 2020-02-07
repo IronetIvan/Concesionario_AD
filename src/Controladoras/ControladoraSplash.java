@@ -30,18 +30,7 @@ public class ControladoraSplash implements Initializable {
 
         progreso.progressProperty().bind(tareaSecundaria.progressProperty());
 
-        FadeTransition transicion = new FadeTransition(Duration.seconds(3), imagenFondo);
-        transicion.setToValue(1.0);
-        transicion.setFromValue(0.0);
-        transicion.play();
-
-        transicion.setOnFinished(new EventHandler<ActionEvent>() {
-            @Override
-            public void handle(ActionEvent event) {
-
-                new Thread(tareaSecundaria).start();
-            }
-        });
+        new Thread(tareaSecundaria).start();
         tareaSecundaria.setOnSucceeded(new EventHandler<WorkerStateEvent>() {
             @Override
             public void handle(WorkerStateEvent event) {
@@ -51,12 +40,7 @@ public class ControladoraSplash implements Initializable {
 
             }
         });
-        /*progreso.progressProperty().addListener(new ChangeListener<Number>() {
-            @Override
-            public void changed(ObservableValue<? extends Number> observable, Number oldValue, Number newValue) {
-                System.out.println(newValue.intValue());
-            }
-        });*/
+
 
     }
 

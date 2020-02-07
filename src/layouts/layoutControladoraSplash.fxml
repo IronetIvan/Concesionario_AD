@@ -14,9 +14,9 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.control.ProgressBar?>
 
-<BorderPane prefHeight="600.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladoras.ControladoraSplash">
+<BorderPane prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladoras.ControladoraSplash">
     <center>
-        <ImageView fx:id="imagenFondo" fitHeight="570.0" fitWidth="400.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="false" BorderPane.alignment="CENTER">
+        <ImageView fx:id="imagenFondo" fitHeight="480.0" fitWidth="700.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="false" BorderPane.alignment="CENTER">
             <image>
                 <Image url="@../resources/fondo.jpg" />
             </image>
@@ -26,6 +26,6 @@
         </ImageView>
     </center>
     <bottom>
-        <ProgressBar fx:id="progreso" prefWidth="600.0" progress="0.0" BorderPane.alignment="CENTER" />
+        <ProgressBar fx:id="progreso" prefWidth="700.0" progress="0.0" BorderPane.alignment="CENTER" />
     </bottom>
 </BorderPane>
