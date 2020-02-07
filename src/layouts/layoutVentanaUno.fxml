@@ -23,9 +23,9 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <JFXButton text="Coches" textFill="#d71515" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+            <JFXButton fx:id="btnListar" prefHeight="74.0" prefWidth="226.0" text="Listar coches" textFill="#d71515" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                <font>
-                  <Font name="Arial Black" size="18.0" />
+                  <Font name="Arial Black" size="24.0" />
                </font>
                <ripplerFill>
                   <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
@@ -36,7 +36,7 @@
                   </RadialGradient>
                </ripplerFill>
             </JFXButton>
-            <JFXButton text="Administrador" textFill="#fcfcfc" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <JFXButton fx:id="btnAdministrar" text="Administrador" textFill="#fcfcfc" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <font>
                   <Font name="Consolas" size="14.0" />
                </font>
@@ -49,7 +49,7 @@
                   </RadialGradient>
                </ripplerFill>
             </JFXButton>
-            <JFXButton text="Opiniones" textFill="#fcfcfc" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <JFXButton fx:id="btnOpiniones" text="Opiniones" textFill="#fcfcfc" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <font>
                   <Font name="Consolas" size="14.0" />
                </font>
@@ -66,12 +66,12 @@
       </GridPane>
    </center>
    <top>
-      <Label text="Concesionario" textFill="#eeeded" BorderPane.alignment="CENTER">
+      <Label text="Concesionario" textFill="#33abe8" underline="true" BorderPane.alignment="CENTER">
          <BorderPane.margin>
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </BorderPane.margin>
          <font>
-            <Font name="Arial Black" size="18.0" />
+            <Font name="Arial Black" size="36.0" />
          </font>
       </Label>
    </top>
