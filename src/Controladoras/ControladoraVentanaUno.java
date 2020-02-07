@@ -1,6 +1,7 @@
 package Controladoras;
 
 import Ventanas.VentanaListar;
+import Ventanas.VentanaLogIn;
 import Ventanas.VentanaOpiniones;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
@@ -39,6 +40,14 @@ public class ControladoraVentanaUno implements Initializable {
                 Stage stage = (Stage) btnListar.getScene().getWindow();
                 stage.close();
 
+            }
+        });
+        btnAdministrar.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent event) {
+                VentanaLogIn vLogin = new VentanaLogIn();
+                Stage stage = (Stage) btnAdministrar.getScene().getWindow();
+                stage.close();
             }
         });
     }
