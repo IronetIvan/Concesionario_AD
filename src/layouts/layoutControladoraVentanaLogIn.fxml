@@ -34,13 +34,19 @@
             </JFXTextField>
             <JFXButton fx:id="btnIniciar" text="Iniciar sesion" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <font>
-                  <Font name="Arial Narrow" size="18.0" />
+                  <Font name="Arial Black" size="22.0" />
                </font>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
             </JFXButton>
             <JFXButton fx:id="btnVolver" text="Volver" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <font>
-                  <Font name="Arial Narrow" size="18.0" />
+                  <Font name="Arial Black" size="22.0" />
                </font>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
             </JFXButton>
          </children>
       </GridPane>
@@ -50,6 +56,9 @@
          <font>
             <Font name="Arial Black" size="24.0" />
          </font>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
       </Label>
    </top>
 </BorderPane>

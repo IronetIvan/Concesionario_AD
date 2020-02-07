@@ -38,7 +38,7 @@ public class ControladoraVentanaUno implements Initializable {
             public void handle(ActionEvent event) {
                 VentanaOpiniones vOpiniones = new VentanaOpiniones();
                 Stage stage = (Stage) btnListar.getScene().getWindow();
-                stage.close();
+                stage.hide();
 
             }
         });
@@ -47,7 +47,7 @@ public class ControladoraVentanaUno implements Initializable {
             public void handle(ActionEvent event) {
                 VentanaLogIn vLogin = new VentanaLogIn();
                 Stage stage = (Stage) btnAdministrar.getScene().getWindow();
-                stage.close();
+                stage.hide();
             }
         });
     }
