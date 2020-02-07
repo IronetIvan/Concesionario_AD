@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="906.0" style="-fx-background-image: url(resources/fondo.jpg); -fx-background-repeat: no-repeat;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladoras.ControladoraVentanaUno">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="906.0" style="-fx-background-image: url(resources/fondo3.jpg); -fx-background-repeat: no-repeat;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controladoras.ControladoraVentanaUno">
    <center>
       <GridPane BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -36,7 +36,7 @@
                   </RadialGradient>
                </ripplerFill>
             </JFXButton>
-            <JFXButton fx:id="btnAdministrar" text="Administrador" textFill="#fcfcfc" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <JFXButton fx:id="btnAdministrar" text="Administrador" textFill="#000000" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <font>
                   <Font name="Consolas" size="14.0" />
                </font>
@@ -49,7 +49,7 @@
                   </RadialGradient>
                </ripplerFill>
             </JFXButton>
-            <JFXButton fx:id="btnOpiniones" text="Opiniones" textFill="#fcfcfc" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+            <JFXButton fx:id="btnOpiniones" text="Opiniones" textFill="#000000" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                <font>
                   <Font name="Consolas" size="14.0" />
                </font>
