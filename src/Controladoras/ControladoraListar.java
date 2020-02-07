@@ -1,5 +1,6 @@
 package Controladoras;
 
+import Ventanas.VentanaListar;
 import Ventanas.VentanaUno;
 import com.jfoenix.controls.JFXButton;
 import javafx.event.ActionEvent;
@@ -26,9 +27,12 @@ public class ControladoraListar implements Initializable {
         btnVolver.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {
-                Stage stage = (Stage) btnVolver.getScene().getWindow();
-                stage.hide();
+                VentanaUno v1 = new VentanaUno();
+                VentanaListar ventanaListar = (VentanaListar) btnVolver.getScene().getWindow();
+                ventanaListar.close();
+
             }
         });
     }
 }
+

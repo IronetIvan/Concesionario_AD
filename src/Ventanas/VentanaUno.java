@@ -6,17 +6,19 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class VentanaUno extends Application {
-    @Override
-    public void start(Stage primaryStage) throws Exception{
-        Parent root = FXMLLoader.load(getClass().getResource("../layouts/layoutVentanaUno.fxml"));
-        primaryStage.setTitle("Concesionario");
-        primaryStage.setScene(new Scene(root, 906, 579));
-        primaryStage.show();
-    }
+import java.io.IOException;
 
-
-    public void mostrar(){
-        launch();
+public class VentanaUno extends Stage {
+    public VentanaUno() {
+        Parent root= null;
+        try {
+            root  = FXMLLoader.load(getClass().getResource("../layouts/layoutVentanaUno.fxml")) ;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        Scene scene = new Scene(root,906,579);
+        this.setScene(scene);
+        this.setTitle("Concesionario vehículos");
+        this.show();
     }
 }

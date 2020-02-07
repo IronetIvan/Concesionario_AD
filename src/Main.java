@@ -1,3 +1,4 @@
+import Ventanas.VentanaSplash;
 import Ventanas.VentanaUno;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -7,8 +8,8 @@ import javafx.stage.Stage;
 
 public class Main {
     public static void main(String[] args) {
-        VentanaUno v1 = new VentanaUno();
-        v1.mostrar();
+        VentanaSplash vSplash = new VentanaSplash();
+        vSplash.mostrar();
     }
 
 }
