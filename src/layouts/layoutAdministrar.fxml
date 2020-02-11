@@ -22,17 +22,17 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
             </rowConstraints>
             <children>
-                <JFXButton text="Insertar">
+                <JFXButton fx:id="btnInsertar" text="Insertar">
                     <font>
                         <Font name="Arial Black" size="24.0" />
                     </font>
                 </JFXButton>
-                <JFXButton text="Eliminar" GridPane.rowIndex="1">
+                <JFXButton fx:id="btnEliminar" text="Eliminar" GridPane.rowIndex="1">
                     <font>
                         <Font name="Arial Black" size="24.0" />
                     </font>
                 </JFXButton>
-                <JFXButton text="Modificar" GridPane.rowIndex="2">
+                <JFXButton fx:id="btnModificar" text="Modificar" GridPane.rowIndex="2">
                     <font>
                         <Font name="Arial Black" size="24.0" />
                     </font>
